@@ -1,0 +1,23 @@
+@startuml Entreprise
+    class Salarié{
+        id
+        nom
+        prenom
+        adresse
+        codePostal
+        ville
+        dateEmbauche
+        codeService
+    }
+    class Service{
+        id
+        libelle
+    }
+    class Competence{
+        id
+        libelle        
+    }
+    class Fonction{
+        id
+        libelle
+    }

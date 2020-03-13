@@ -1,0 +1,5 @@
+U:\si4\SLAM2\TPAnimal\TPAnimal\bin\Debug\TPAnimal.exe
+U:\si4\SLAM2\TPAnimal\TPAnimal\bin\Debug\TPAnimal.pdb
+U:\si4\SLAM2\TPAnimal\TPAnimal\obj\x86\Debug\TPAnimal.csprojResolveAssemblyReference.cache
+U:\si4\SLAM2\TPAnimal\TPAnimal\obj\x86\Debug\TPAnimal.exe
+U:\si4\SLAM2\TPAnimal\TPAnimal\obj\x86\Debug\TPAnimal.pdb

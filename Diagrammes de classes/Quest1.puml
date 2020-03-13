@@ -1,0 +1,297 @@
+@startuml Exo01
+    class Ecrivain{
+        <u>id</u>
+        nom
+    }
+    class Oeuvre{
+        <u>id</u>
+        titre
+    }
+   Ecrivain"1..1\nà écrit"--"1..*\nécrit"Oeuvre:Ecrire
+@enduml 
+
+@startuml Exo02
+    class Répertoire{
+        <u>id</u>
+        nom
+    }
+    class Fichiers{
+        <u>id</u>
+        titre
+    }
+    Répertoire"1..*\nest contenu"--"0..*\ncontient"Fichiers:Contenir
+@enduml 
+
+@startuml Exo03
+    class Pièce{
+        <u>id</u>
+        type
+    }
+    class Mur{
+        <u>id</u>
+        taille
+    }
+    Pièce"1..2\nest présent"--"1..*\ncontient"Mur:Contenir
+@enduml
+
+@startuml Exo04
+    class Personne{
+        <u>id</u>
+        nom
+        prenom
+    }
+    class Université{
+        <u>id</u>
+        nom
+        lieu
+    }
+    Université"1..1"--"1..*"Personne:Etudier
+    Université"1..1"--"1..*"Personne:Enseigner
+@enduml
+
+@startuml Exo05
+    class Fichier{
+        <u>id</u>
+        nom
+    }
+    class Répertoire{
+        <u>id</u>
+        nom
+    }
+    class Raccourci{
+        <u>id</u>
+        type
+    }
+    Fichier"1..*"--"1..*"Raccourci:Concerner
+    Répertoire"1..*"--"1..*"Raccourci:Concerner
+    Fichier"."..right.."."Raccourci:OU
+@enduml
+
+@startuml Exo06
+    class Rectangle{
+        1Rectangle(p1:point, p2:point)
+        Surface():double
+        Périmètre():double
+        Translater(v:vecteur)
+    }
+    class Point{
+        ...
+    }
+    Rectangle"2..4"--"0..*"Point:Construire
+@enduml
+
+@startuml Exo07
+    class Salle{
+        ...
+    }
+    class Film{
+        ...
+    }
+    class Séance{
+        Heure
+    }
+    class Cinema{
+        ...
+    }
+    Cinema"1..*"--"1..1"Salle:Composer
+    Salle"1..*"-right-"1..*"Film:Projeter
+    (Salle,Film)..Séance:Projeter
+@enduml
+
+@startuml Exo08
+    class Facteur{
+        nom
+    }
+    class Localisation{
+        lieu
+    }
+    class Habitant{
+        nom
+    }
+    class Recommandé{
+        type
+    }
+    Facteur"1..1"-right-"1..1"Localisation:Aller
+    Habitant"1..*"--"1..1"Localisation:Habiter
+    Facteur"1..1"-up-"1..*"Recommandé:Distribuer
+@enduml
+
+@startuml Exo09
+    class Polygone{
+
+    }
+    class Point{
+        Abscisse
+        Ordonnée
+    }
+    Polygone"0..*"-right-"3..*"Point:Constituer
+@enduml
+
+@startuml Exo10
+    class Salarié{
+        nom
+    }
+    class Subordonné{
+        nom
+    }
+    Salarié"1..1"-right-"1..*"Subordonné:Possèder
+
+@enduml
+
+@startuml Exo11
+    class Médiathèque{
+        
+    }
+    class Abonnés{
+        nom
+    }
+    class Médias{
+
+    }
+    Abonnés"1..1"-right-"1..*"Médias:Emprunter
+    Médias"1..*"--"1..1"Médiathèque:Appartient
+@enduml
+
+@startuml Exo12
+    class Client{
+        nom
+    }
+    class Mécanicien{
+        Compétences
+    }
+    class Réparation{
+        type
+    }
+    Client"1..1"-Up-"1..*"Réparation:Demander
+    Mécanicien"1..1"-right-"1..*"Réparation:Effectuer
+@enduml
+
+@startuml Exo13
+    class Galerie{
+
+    }
+    class Artiste{
+
+    }
+    class Oeuvre{
+
+    }
+    class Client{
+
+    }
+    class Achat{
+
+    }
+    Galerie"1..1"--"1..*"Oeuvre:Expose
+    Oeuvre"1..*"-right-"1..1"Artiste:Créer
+    Client"1..*"--"1..1"Achat:Acheter
+    Achat"1..1"-right-"1..1"Oeuvre:Prix
+@enduml
+
+@startuml Exo14
+    class Personne{
+
+    } 
+    class Couverts{
+        Fourchette
+    }
+    Personne"1..1"--"1..1"Couverts:Utiliser
+
+@enduml
+
+@startuml Exo15
+    class Fichier{
+
+    } 
+    class Contenu{
+        Enregistrements
+    }
+    Fichier"1..1"--"1..*"Contenu:Contenir
+@enduml
+
+@startuml Exo16
+
+    class Pays{
+
+    }
+
+    Pays"0..*"--"0..*"Pays:Frontalier
+
+
+@enduml
+
+@startuml Exo17
+    class Programmation{
+        Langages
+    }
+    class Etudiant{
+        
+    }
+    
+    Etudiant"1..*"--"1..*"Programmation:Maîtriser
+@enduml
+
+@startuml Exo18
+    class Etudiant{
+
+    }
+    class Programmation{
+        Langages
+    }
+    class NiveauDeMaîtrise{
+
+    } 
+
+    Etudiant"1..*"--"1..*"NiveauDeMaîtrise:Acquerir
+    NiveauDeMaîtrise"1..*"--"1..*"Programmation:Nécessaire
+@enduml
+
+@startuml Exo19
+    class Fichier{
+
+    }
+    class Utilisateur{
+
+    }
+    class Permission{
+        Read
+        Write
+        Execute
+    }
+    Fichier"1..*"--"1..*"Utilisateur
+    (Fichier,Utilisateur)..Permission:Accèder   
+@enduml
+
+@startuml Exo20
+    class Ville
+    Ville"1..1"--"1..1"Ville:Distance
+@enduml
+
+@startuml Exo21
+    class Personne{
+
+    }
+    class Projet{
+
+    }
+    class Langage{
+
+    }
+    Personne"1..*"--"1..*"Projet:Créer
+    (Personne,Projet).. Langage:Utiliser
+@enduml
+
+@startuml Exo22
+    class Equipe
+    class Personne
+
+    Personne"1..*"--"1..1"Equipe:Composer
+@enduml
+
+@startuml Exo23
+    
+@enduml
+
+
+
+

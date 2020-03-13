@@ -1,0 +1,4 @@
+U:\si4\SLAM2\TPBanque\TPBanque\bin\Debug\TPBanque.exe
+U:\si4\SLAM2\TPBanque\TPBanque\bin\Debug\TPBanque.pdb
+U:\si4\SLAM2\TPBanque\TPBanque\obj\x86\Debug\TPBanque.exe
+U:\si4\SLAM2\TPBanque\TPBanque\obj\x86\Debug\TPBanque.pdb

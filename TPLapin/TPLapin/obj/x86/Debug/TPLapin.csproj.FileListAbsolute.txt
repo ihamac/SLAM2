@@ -1,0 +1,4 @@
+U:\si4\SLAM2\TPLapin\TPLapin\bin\Debug\TPLapin.exe
+U:\si4\SLAM2\TPLapin\TPLapin\bin\Debug\TPLapin.pdb
+U:\si4\SLAM2\TPLapin\TPLapin\obj\x86\Debug\TPLapin.exe
+U:\si4\SLAM2\TPLapin\TPLapin\obj\x86\Debug\TPLapin.pdb

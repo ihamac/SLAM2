@@ -1,0 +1,39 @@
+@startuml Auto-Ecole
+    class Moniteur {
+        <u>id</u>
+        nom
+        dateEmbauche
+    }
+    class Leçon{
+        <u>id</u>
+        dateLeçon
+        heureLeçon
+    }
+    class Eleve{
+        <u>id</u>
+        nom 
+        prenom
+        adresse
+        téléphone
+        dateNaissance
+        dateInscription
+    }
+    
+    class Voiture{
+        <u>id</u>
+        immatriculation
+        dateAchat
+        kilometrage
+    }
+    class Modele{
+        <u>id</u>
+        nom
+        cylindree
+        puissance
+    }
+    Moniteur"1..1\nest donnée"--right--"1..*\ndonne"Leçon:Donner
+    Leçon"1..*\nsuit"--right--"1..*\nnest donnée"Eleve:Suivre
+    Voiture"1..*\nindique"--right--"1..1\nest associée"Modele:Indiquer
+    Leçon"1..1\nutilise"----"1..*\nest nécessaire"Voiture:Nécessaire
+
+    @enduml

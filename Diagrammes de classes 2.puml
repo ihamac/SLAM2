@@ -1,0 +1,77 @@
+@startuml Exo1
+skinparam linetype ortho 
+
+ordinateur<|-r-clavier
+ordinateur<|-r-souris
+ordinateur<|-d-boitier
+ordinateur<|-r-moniteur
+boitier *- chassis
+chassis o- carteMere
+carteMere o-d- mémoire
+mémoire <|-d- ram
+mémoire <|-d- rom
+mémoire <|-d cache
+chassis o-d- ventilateur
+chassis o-d- supportDeStockage
+supportDeStockage <|-d- disquette
+supportDeStockage <|-d- disqueDur
+supportDeStockage <|-d- cdRom
+supportDeStockage <|-d- dvdRom
+carteMere o- cartePeriphérique
+cartePeriphérique <|-d- son
+cartePeriphérique <|-d- reseau
+cartePeriphérique <|-d- graphique
+
+@enduml
+
+@startuml Exo2
+pays o-"1..1" capital:Posséder
+@enduml
+
+@startuml Exo3
+personne o--"0..1" fourchette:Diner
+@enduml
+
+@startuml Exo4
+repertoire*--"0..*"fichier:Contenir
+repertoire o--"0..*"repertoire:Posséder
+@enduml
+
+@startuml Exo5
+ fichier *--"0..*"enregistrement
+@enduml
+
+@startuml Exo6
+dessin <|-up- géométrique  
+dessin <|-up- texte  
+groupe o-up-"1..*\nContient"dessin:Composer
+@enduml
+
+@startuml Exo7
+skinparam linetype ortho 
+class vol{
+    heureDepart
+    heureArrivée
+    dateDepart
+    dateArrivée
+    Escale
+    numéro
+}
+class reservation{
+    confirmée
+    annulée
+}
+class escale{
+    heureDepart
+    heureArrivée
+}
+
+compagnie"1..1" *--"1..*"vol:Proposer
+client"1..1"--"1..*"reservation
+reservation-right-"1..1"vol:Concerner
+reservation"1..1"--"1..1"passager:Concerner
+vol-right-aeroport
+aeroport"1..*"-up-"1..*"ville:Desservir
+(aeroport,vol)..escale
+@enduml
+

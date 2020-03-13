@@ -1,0 +1,5 @@
+U:\si4\SLAM2\ConceptionClasse\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+U:\si4\SLAM2\ConceptionClasse\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+U:\si4\SLAM2\ConceptionClasse\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+U:\si4\SLAM2\ConceptionClasse\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+U:\si4\SLAM2\ConceptionClasse\ConsoleApplication1\obj\x86\Debug\ConceptionClasse.csprojResolveAssemblyReference.cache

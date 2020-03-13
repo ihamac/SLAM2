@@ -1,0 +1,8 @@
+U:\Si4\Tp 04\lapin\lapin\bin\Debug\lapin.exe
+U:\Si4\Tp 04\lapin\lapin\bin\Debug\lapin.pdb
+U:\Si4\Tp 04\lapin\lapin\obj\x86\Debug\lapin.exe
+U:\Si4\Tp 04\lapin\lapin\obj\x86\Debug\lapin.pdb
+U:\si4\SLAM2\lapin inese\lapin\obj\x86\Debug\lapin.exe
+U:\si4\SLAM2\lapin inese\lapin\bin\Debug\lapin.exe
+U:\si4\SLAM2\lapin inese\lapin\bin\Debug\lapin.pdb
+U:\si4\SLAM2\lapin inese\lapin\obj\x86\Debug\lapin.pdb

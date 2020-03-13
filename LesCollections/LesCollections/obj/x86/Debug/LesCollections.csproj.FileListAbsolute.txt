@@ -1,0 +1,4 @@
+U:\si4\SLAM2\LesCollections\LesCollections\bin\Debug\LesCollections.exe
+U:\si4\SLAM2\LesCollections\LesCollections\bin\Debug\LesCollections.pdb
+U:\si4\SLAM2\LesCollections\LesCollections\obj\x86\Debug\LesCollections.exe
+U:\si4\SLAM2\LesCollections\LesCollections\obj\x86\Debug\LesCollections.pdb
